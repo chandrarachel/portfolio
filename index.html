@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Chandra</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#header" class="logo"><img src="img/logo.png" alt="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="navIcon fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="navIcon fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi! I am <span>Rachel Chandra</span>.</h1>
+        </div>
+    </div>
+</div>
+
+<!--------------------- about --------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/me1.png" alt="personal picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My name is Rachel, and I am currently pursuing a degree in Computer Science with an interest in AI and Cybersecurity. As a curious student, I constantly seek to acquire new skills and expand my knowledge. In my academic pursuits, I value collaboration and enjoy participating in projects that challenge me to utilize my creativity throughout my work.</p>
+                <br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents-rows">
+                        <div class="tab-contents-cols">
+                            <h3>IT Skills:</h3>
+                            <ul>
+                                <li><span>Mobile App Development (iOS)</span><br>React Native, React.js, Vue.js</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Programming Languages</span><br>C++, Python</li>
+                                <li><span>Database Query Language</span><br>SQL (basic)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents-cols">
+                            <h3>Languages:</h3>
+                            <ul>
+                                <li><span>Indonesian (Native)</span></li>
+                                <li><span>English (IELTS 7.5)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>2024 | Mobile Application Developer at Healfie Technology Limited</span>
+                            <ul>
+                                <li>Demonstrated versatility by contributing to both the front-end and back-end development of an iOS mobile app and website despite being new to the technologies involved.</li>
+                                <li>Front-end: Gained a solid understanding of React Native by studying the codebase, modifying the UI to be responsive, adding new features like a progress bar and icons, and improving the app's efficiency by removing redundant steps.</li>
+                                <li>Back-end: Used Vue.js to implement error messaging for incorrect login credentials and created a new role for controlled developer access.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>2023 | Database Organizer at World Harvest Indonesia</span>
+                            <ul>
+                                <li>Curated database of a non-profit organization with multiple branches in Indonesia</li>
+                                <li>Implemented Microsoft Excel formulas to organize thousands of data accurately</li>
+                                <li>Teamed up with a partner to seek most efficient approach to manage data</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>2022 | Teacher Assistant at CreativKids Education</span>
+                            <ul>
+                                <li>Constructed Python and Scratch games</li>
+                                <li>Tutored students in building projects</li>
+                                <li>Composed a holiday learning program, educational offline games, and classroom decorations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>2023-Now | City University of Hong Kong</span><br>
+                            Bachelor of Science: Computer Science<br>
+                            Talents Programme, Full Tuition Scholarship <br>
+                            Achieved Dean's List for Semester B of Academic Year 2023/2024
+                        </li>
+                        <li>
+                            <span>2020-2023 | UPH College</span><br>
+                            Activities and societies: Physics Nobel Society, Board Games Nobel Society, Mission Trip to Madura and Surabaya, Committee for CSI Competition (Talent)Activities and societies: Physics Nobel Society, Board Games Nobel Society, Mission Trip to Madura and Surabaya, Committee for CSI Competition (Talent)
+                            <br><br>
+                            Majored in Life Science and Physics. Minored in Chemistry. Two years of Internet of Things electives and Applied Mathematics for Computer Science.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--------------------- portfolio --------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work_mobileApp.png" alt="mobile app development project">
+                <div class="layer">
+                    <h3>Mobile App Development</h3>
+                    <p>Developed new features for a mobile application, enhancing the user experience and improving app efficiency.</p>
+                    <a href="portfolio/work_mobileApp.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work1.png" alt="website project">
+                <div class="layer">
+                    <h3>University Website</h3>
+                    <p>Utilized HTML, CSS, and JavaScript to construct a university website prototype.</p>
+                    <a href="https://chandrarachel.github.io/hkiu_website/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work2.png" alt="learning module project">
+                <div class="layer">
+                    <h3>Coding Module for Children</h3>
+                    <p>Constructed learning modules to teach children coding (Python and Scratch) through projects, educational games, and posters.</p>
+                    <a href="portfolio/work_learningModule.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work3.png" alt="website project">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <p>Developed an online shopping website using HTML, CSS, and JavaScript.</p>
+                    <a href="https://chandrarachel.github.io/bookshopWebsite/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------- contact --------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <a href="mailto:chandra.rachelsamantha@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="https://www.linkedin.com/in/chandra-rachel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/chandrarachel" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="img/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="formNotification"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Rachel Chandra.</p>
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2DEmsyEajB_brLCeVkhXzoIU0DpRR0VmUkQEFOk2zh814Ds-BHrvKLecSs5VgcLoLZQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('formNotification')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    
+<script>
+    window.addEventListener('scroll', function(){
+    const header = document.querySelector('nav');
+
+    header.classList.toggle('sticky', window.scrollY > 0);
+    }) 
+</script>
+
+</body>
+</html>

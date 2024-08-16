@@ -1,0 +1,60 @@
+p{
+    font-size: 22px;
+}
+#header .header-text{
+    width: 100%;
+}
+.header-text-col1{
+    display: inline-block;
+    margin-top: 8vh;
+    width: 60%;
+}
+.header-text-col2{
+    display: inline-block;
+    width: 38%;
+}
+.header-text-col2 img{
+    position: absolute;
+    height: 80vh;
+    width: auto;
+    top: 0;
+    margin-top: 20vh;
+}
+.row{
+    margin-top: 30px;
+}
+.row p, .row img{
+    width: 48%;;
+}
+.designCol p, .row img{
+    height: 40%;
+}
+.row .left-side{
+    width: 77%;
+    height: fit-content;
+}
+.row .right-side{
+    width: 20%;
+}
+
+/* learningModule */
+#window{
+    cursor: pointer;
+    left: 50vw;
+    width: 50vw;
+    height: auto;
+}
+.teachingImg{
+    display: block;
+    height: auto;
+    width: 70vw;
+    margin: 20px 0;
+}
+
+
+@media only screen and (max-width: 700px){
+    .row img{
+        display: block;
+        width: 80%;
+    }
+}

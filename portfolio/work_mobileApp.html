@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Chandra</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="../index.html#header" class="logo"><img src="../img/logo.png" alt="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <i class="navIcon fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="navIcon fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div class="header-text-col1">
+                <h2>Mobile App Development</h2>
+                <p>Developed new features for a mobile application, enhancing the user experience and improving app efficiency.</p>
+            </div>
+            <div class="header-text-col2">
+                <img src="img/mobileApp/progressBar.png" alt="mobile app with progress bar and heart icons">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------- about --------------------->
+<div id="about">
+    <div class="container">
+        <h3 class="sub-title">1. Responsiveness</h3>
+        <p>Improved responsiveness of buttons, images, writing layout.</p>
+        <div class="col">
+            <div class="row">
+                <p>BEFORE:</p>
+                <p>AFTER:</p>
+            </div>
+            <div class="row">
+                <img src="img/mobileApp/before1.png" alt="before1">
+                <img src="img/mobileApp/after1.png" alt="after1">                
+            </div>
+            <div class="row">
+                <img src="img/mobileApp/before2.png" alt="before2">
+                <img src="img/mobileApp/after2.png" alt="after2">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="sub-title">2. Design</h3>
+        <p>Integrated new UI elements (progress bar, heart icons for wrong attempts counter).</p>
+        <div class="designCol">
+            <div class="row">
+                <p>BEFORE:</p>
+                <p>AFTER:</p>
+            </div>
+            <div class="row">
+                <img src="img/mobileApp/before3.png" alt="before3">              
+                <img src="img/mobileApp/after3.png" alt="after3">              
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="sub-title">3. Efficiency</h3>
+        <p>Combined 3 pages of introduction pages into 1 page (brightness, eye, and phone screen icons) and modified the flow of an eye test in the app (starts from the middle; if wrong answer twice, it will start from the beginning; else it will move to the next question).</p>
+        <div class="efficiency_col">
+            <div class="row">
+                <p class="left-side">BEFORE:</p>
+                <p class="right-side">AFTER:</p>
+            </div>
+            <div class="row">
+                <img class="left-side" src="img/mobileApp/before4.png" alt="before4">       
+                <img class="right-side" src="img/mobileApp/after4.png" alt="after4">     
+            </div>
+            <div class="row">
+                <img src="img/mobileApp/before5.png" alt="before5">        
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="sub-title">4. Back-End</h3>
+        <p>Added a notification ("Incorrect username or password") when user enters wrong credentials in the login page and introduced a new role (admin_dev) with permission to access specific information only.</p>
+        <div class="efficiency_col">
+            <div class="row">
+                <p>*No screenshots for company's privacy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------- contact --------------------->
+<div id="contact">
+    <div class="copyright">
+        <p>Copyright © 2024 Rachel Chandra.</p>
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    
+<script>
+    window.addEventListener('scroll', function(){
+    const header = document.querySelector('nav');
+
+    header.classList.toggle('sticky', window.scrollY > 0);
+    }) 
+</script>
+
+</body>
+</html>
