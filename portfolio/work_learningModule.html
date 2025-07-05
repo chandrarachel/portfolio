@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,118 +9,125 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <a href="../index.html#header" class="logo"><img src="../img/logo.png" alt="logo"></a>
-            <ul id="sidemenu">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#portfolio">Portfolio</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-                <i class="navIcon fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="navIcon fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <div class="header-text-col1">
-                <h2>Coding Module for Children</h2>
-                <p>Designed interactive learning modules to teach children fundamental coding skills (Python and Scratch) through visually compelling instructional materials and educational games.</p>
-            </div>
-            <div class="header-text-col2">
-                <img src="img/learningModule/window1.png" id="window" onclick="changeImage()" alt="window poster about variables">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="../index.html#header" class="logo"><img src="../img/logo.png" alt="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#portfolio">Portfolio</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <i class="navIcon fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="navIcon fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="header-text-col1">
+                    <h2>Coding Module for Children</h2>
+                    <p>Designed interactive learning modules to teach children fundamental coding skills (Python and
+                        Scratch) through visually compelling instructional materials and educational games.</p>
+                </div>
+                <div class="header-text-col2">
+                    <img src="../img/window1.png" id="window" onclick="changeImage()"
+                        alt="window poster about variables">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!--------------------- about --------------------->
-<div id="about">
-    <div class="container">
-        <h3 class="sub-title">1. Holiday Program</h3>
-        <p>Build a holiday learning module for a coding class, which integrates learning with fun games and comic.</p>
-        <object data="img/learningModule/holiday.pdf" width="75%" height="500"></object>
+    <!--------------------- about --------------------->
+    <div id="about">
+        <div class="container">
+            <h3 class="sub-title">1. Holiday Program</h3>
+            <p>Build a holiday learning module for a coding class, which integrates learning with fun games and comic.
+            </p>
+            <object data="../img/holiday.pdf" width="75%" height="500"></object>
+        </div>
+        <div class="container">
+            <h3 class="sub-title">2. Classroom Design Plan</h3>
+            <p>Planned a classroom design for a coding class, which includes wall decorations, posters, and room layout.
+            </p>
+            <object data="../img/classroomDesign.pdf" width="75%" height="500"></object>
+        </div>
+        <div class="container">
+            <h3 class="sub-title">3. Offline Games</h3>
+            <p>Learn basic of coding through real life games without computer.</p>
+            <object data="../img/offlineGames.pdf" width="75%" height="500"></object>
+        </div>
+        <div class="container">
+            <h3 class="sub-title">4. Guiding Students</h3>
+            <p>Built Scratch and Python projects, then guided students to make them.</p>
+            <img class="teachingImg" src="../img/teaching1.png" alt="photo of teaching">
+            <img class="teachingImg" src="../img/teaching2.png" alt="photo of teaching">
+        </div>
     </div>
-    <div class="container">
-        <h3 class="sub-title">2. Classroom Design Plan</h3>
-        <p>Planned a classroom design for a coding class, which includes wall decorations, posters, and room layout.</p>
-        <object data="img/learningModule/classroomDesign.pdf" width="75%" height="500"></object>
-    </div>
-    <div class="container">
-        <h3 class="sub-title">3. Offline Games</h3>
-        <p>Learn basic of coding through real life games without computer.</p>
-        <object data="img/learningModule/offlineGames.pdf" width="75%" height="500"></object>
-    </div>
-    <div class="container">
-        <h3 class="sub-title">4. Guiding Students</h3>
-        <p>Built Scratch and Python projects, then guided students to make them.</p>
-        <img class="teachingImg" src="img/learningModule/teaching1.png" alt="photo of teaching">              
-        <img class="teachingImg" src="img/learningModule/teaching2.png" alt="photo of teaching">
-    </div>
-</div>
 
-<!--------------------- contact --------------------->
-<div id="contact">
-    <div class="copyright">
-        <p>Rachel Samantha Chandra</p>
+    <!--------------------- contact --------------------->
+    <div id="contact">
+        <div class="copyright">
+            <p>Rachel Samantha Chandra</p>
+        </div>
     </div>
-</div>
 
-<script>
-    var tabLinks = document.getElementsByClassName("tab-links");
-    var tabContents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabName){
-        for(tabLink of tabLinks){
-            tabLink.classList.remove("active-link");
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
         }
-        for(tabContent of tabContents){
-            tabContent.classList.remove("active-tab");
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-tab");
-    }
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-    
-<script>
-    window.addEventListener('scroll', function(){
-    const header = document.querySelector('nav');
-
-    header.classList.toggle('sticky', window.scrollY > 0);
-    }) 
-</script>
-
-<script>
-    var img = document.getElementById("window");
-    var images = ["window1.png", "window2.png", "window3.png", "window4.png"];
-    var imagesLength = images.length;
-    var i = 0;
-    function changeImage(){       
-        img.src = "img/learningModule/" + images[i];
-        i++;
-        if(i >= images.length){
-            i = 0;
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
-    }
+    </script>
 
-</script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('nav');
+
+            header.classList.toggle('sticky', window.scrollY > 0);
+        }) 
+    </script>
+
+    <script>
+        var img = document.getElementById("window");
+        var images = ["window1.png", "window2.png", "window3.png", "window4.png"];
+        var imagesLength = images.length;
+        var i = 0;
+        function changeImage() {
+            img.src = "../img/" + images[i];
+            i++;
+            if (i >= images.length) {
+                i = 0;
+            }
+        }
+
+    </script>
 
 </body>
+
 </html>

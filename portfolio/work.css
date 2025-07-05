@@ -83,8 +83,9 @@ p {
 /* learningModule */
 #window {
     cursor: pointer;
-    left: 50vw;
-    width: 50vw;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
