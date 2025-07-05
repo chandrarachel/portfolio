@@ -2,19 +2,35 @@ p {
     font-size: 22px;
 }
 
+#header .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+}
+
 #header .header-text {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 3rem;
+    padding: 0 2rem;
 }
 
 .header-text-col1 {
-    display: inline-block;
-    margin-top: 8vh;
-    width: 60%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-text-col2 {
-    display: inline-block;
-    width: 38%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-text-col2 img {
@@ -72,10 +88,241 @@ p {
     margin: 20px 0;
 }
 
+/* About section spacing */
+#about .container {
+    line-height: 1.6;
+}
+
+#about .container p {
+    margin-bottom: 2rem;
+}
+
+#about .container ul {
+    margin-bottom: 2rem;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+#about .container ul li {
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+#about .container ul li:last-child {
+    margin-bottom: 0;
+}
+
+#about .container div[style*="margin-bottom:1em"] {
+    margin-bottom: 2rem !important;
+}
+
+#about .container div[style*="margin-bottom:1em"] ul {
+    margin-top: 1rem;
+}
+
+#about .container div[style*="margin-bottom:1em"] ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* Header text spacing */
+.header-text-col1 h2 {
+    margin-bottom: 1rem;
+}
+
+/* Design section styling */
+.designCol .row img {
+    width: 48%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.designCol .row {
+    align-items: flex-start;
+}
+
+.designCol .row p {
+    width: 48%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Efficiency section styling */
+.efficiency_col .row img {
+    max-height: 50vh;
+    width: auto;
+    object-fit: contain;
+}
+
+.efficiency_col .row img.left-side {
+    width: 77%;
+    max-height: 50vh;
+}
+
+.efficiency_col .row img.right-side {
+    width: 20%;
+    max-height: 50vh;
+}
+
+.efficiency_col .row img:not(.left-side):not(.right-side) {
+    width: 48%;
+    max-height: 60vh;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure container fits in one screen */
+.efficiency_col {
+    max-height: none;
+    overflow: visible;
+}
+
+/* PDF styling */
+.pdf-container {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.pdf-container object {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    border: 2px solid #EA93D5;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(234, 147, 213, 0.3);
+    background: #f8f9fa;
+}
+
+/* Presentation photo styling */
+.presentation-photo {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.presentation-photo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.presentation-photo em {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Mobile App page specific styling */
+.header-text-col2 img[src*="progressBar"] {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    position: static;
+    margin: 0;
+    margin-top: 10vh;
+}
+
+/* Keep absolute positioning for other images (not mobile app) */
+.header-text-col2 img:not([src*="progressBar"]) {
+    position: absolute;
+    height: 80vh;
+    width: auto;
+    top: 0;
+    margin-top: 20vh;
+}
+
+/* Text wrapping for header text */
+.header-text-col1 p {
+    margin-bottom: 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+}
 
 @media only screen and (max-width: 700px) {
     .row img {
         display: block;
         width: 80%;
+    }
+
+    #header .header-text {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .header-text-col1 {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .header-text-col1 h2 {
+        font-size: 2rem;
+    }
+
+    .header-text-col2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header-text-col2 img {
+        position: static !important;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .designCol .row img {
+        width: 45%;
+        max-height: 50vh;
+    }
+
+    .designCol .row p {
+        width: 45%;
+        font-size: 1rem;
+    }
+
+    .efficiency_col .row img {
+        max-height: 40vh;
+    }
+
+    .efficiency_col .row img.left-side {
+        width: 70%;
+        max-height: 40vh;
+    }
+
+    .efficiency_col .row img.right-side {
+        width: 25%;
+        max-height: 40vh;
+    }
+
+    .efficiency_col .row img:not(.left-side):not(.right-side) {
+        width: 80%;
+        max-height: 40vh;
+    }
+
+    .pdf-container {
+        margin: 1.5rem auto;
+    }
+
+    .pdf-container object {
+        height: 300px;
+        border: 1px solid #EA93D5;
+    }
+
+    .presentation-photo img {
+        max-height: 400px;
+    }
+
+    .presentation-photo em {
+        font-size: 0.8em;
+        padding: 0 1rem;
     }
 }
