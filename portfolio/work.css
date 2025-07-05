@@ -2,6 +2,12 @@ p {
     font-size: 22px;
 }
 
+#header {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 #header .container {
     padding: 0;
     margin: 0;
@@ -17,6 +23,7 @@ p {
     min-height: 80vh;
     gap: 3rem;
     padding: 0 2rem;
+    margin-top: 10vh;
 }
 
 .header-text-col1 {
@@ -34,11 +41,11 @@ p {
 }
 
 .header-text-col2 img {
-    position: absolute;
+    position: relative;
     height: 80vh;
     width: auto;
-    top: 0;
-    margin-top: 20vh;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .header-text-col2 video {
@@ -225,16 +232,15 @@ p {
     object-fit: contain;
     position: static;
     margin: 0;
-    margin-top: 10vh;
 }
 
-/* Keep absolute positioning for other images (not mobile app) */
+/* Keep relative positioning for other images */
 .header-text-col2 img:not([src*="progressBar"]) {
-    position: absolute;
+    position: relative;
     height: 80vh;
     width: auto;
-    top: 0;
-    margin-top: 20vh;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* Text wrapping for header text */
@@ -255,6 +261,9 @@ p {
         flex-direction: column;
         padding: 2rem 1rem;
         gap: 1.5rem;
+        min-height: 60vh;
+        margin-top: 25vh;
+        padding-top: 2rem;
     }
 
     .header-text-col1 {
